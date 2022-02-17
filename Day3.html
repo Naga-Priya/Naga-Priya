@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Form action="/Index.html">
+        <label for="UName">
+            User name: 
+        </label>
+        <input type="text" id="UName" name="UserName" value="User1"><br><br>
+        <label for="Pwd">
+            Password: 
+        </label>
+        <input type="password" id="Pwd" name="UserPwd" placeholder="Enter your password here">
+    
+    <table>
+        <tr><TD><label for="Uid">ID</label></TD>
+            <TD><input type ="text" id="Uid">
+            </TD></tr>
+            <tr><TD><label for="Branch">Branch</label></TD>
+                <TD><input type ="text" id="Branch">
+                </TD></tr>
+                <tr><td><label>Select Gender:</label></td></tr>
+                <tr>
+                    
+                    <td>
+                        <input type="radio" id="Male" name="Gender">
+                        <td><label for="Male" checked>Male</label></td>
+                    </td>
+
+                    <td>
+                        <input type="radio" id="Female" name="Gender" >
+                        <td><label for="Female">Female</label></td>
+                    </td>
+                </tr>
+                <tr><td><Label>Select Location:</Label></td></tr>
+                <tr><td><input type="checkbox" id="city" name="Location" checked>
+                </td>
+                <td>
+                    <label for="city">Fremont</label>
+                </td>
+                </tr>
+                <tr><td>
+                    <input type="checkbox" id="city" name="Location"></td>
+                <td><label for="city">Colorado</label></td></tr>
+                    
+                <tr>
+                    <td>
+                        <select id="Country" name="division">
+                            <option value="Ind">India</option>
+                            <option value="US">USA</option>
+                            <option value="Aus">Australia</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <textarea id="addr"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input list="browser1">
+                        <datalist id="browser">
+                            <option value ="IE"></option>
+                            <option value ="Chrome"></option>
+                        </datalist>
+                        <datalist id="browser1">
+                            <option value ="IE11"></option>
+                            <option value ="Chrome"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="file">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="range">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Sign up"></tr><td>
+                </tr>
+ 
+    </table>
+
+
+    <fieldset>
+        <legend>
+            Educational Qualifications
+        </legend>
+        <label>Enter highest degree:</label>
+            <input type="text" id="Qual">
+            <br><br>
+        <label>Branch:</label>
+            <input type="text" id="branch">
+    </fieldset>
+
+</Form>
+</body>
+</html>

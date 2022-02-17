@@ -1,0 +1,37 @@
+Day 3:
+------
+What is a webserver?
+When u submit the form, it goes to webserver. Webserver has business logic. sometimes the processing might need data from data base, so server will communicate with DB layer and fetch the data needed and return the result to browser.
+
+Webserver tech Java,.net,php
+Data layer: SQL cerver, Oracle, mySql
+
+HTML Elements:
+1. Input: any input like testbox, dropdown e.t.c
+label for=<id> to uniquely specify a label for the textbox.
+
+Name attribute is used to group radio buttons together.
+Since Id is unique for element, we use id to attach label to elements.
+attributes: type, id, name, value, checked
+
+<fieldset> and <legend>
+Fieldset is a bordered area, Legend is a caption for the field set.
+
+??
+button onclick()
+
+In datalist, user can use the values as suggestions and can choose to enter a value of his own.
+
+date picker: input type = date
+email: input type = email
+type = range
+
+Reference: https://www.w3schools.com/html/
+
+Assignment1:
+Monthly expense report: 
+Create a form to put values for  fields (Mortgage <text>, gas<text>,childcare <text>, Insurance <text>, utility <text>, Misc <text>)
+Upon Save, go to Details.html page, show all the inputs in tabular form. (We need to know Java script to fetch the values from first form)
+Options: customize the form to try out as many elements as possible. E.g, some expense is for monthly, sopme are for annually. try using radio buttons and check boxes to choose options.
+try using column span, row span
+

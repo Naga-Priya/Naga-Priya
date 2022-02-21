@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <frameset rows="20%,60%,20%" >
+        <!-- Framesets is deprecated and cannot be used inside body-->
+        <frame name="Row1" src="/Day3.html"></frame>
+        <frame name="Row2" src="/Index.html"></frame>
+        <!--<frame name="Row3" src="/test.html"></frame>-->
+        <frame name="Row3">
+            <frameset cols="20%,60%,20%" >
+                <!-- Framesets is deprecated and cannot be used inside body-->
+                <frame name="Row1" src="/Day3.html"></frame>
+                <frame name="Row2" src="/Index.html"></frame>
+                <frame name="Row3" src="/test.html"></frame>
+            </frameset>
+        </frame>
+    </frameset>
+
+    
+</head>
+
+</html>

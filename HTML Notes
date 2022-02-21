@@ -10,6 +10,11 @@ HTML Elements:
 1. Input: any input like testbox, dropdown e.t.c
 label for=<id> to uniquely specify a label for the textbox.
 
+Attributes:
+-----------
+readonly 
+required
+
 Name attribute is used to group radio buttons together.
 Since Id is unique for element, we use id to attach label to elements.
 attributes: type, id, name, value, checked
@@ -34,4 +39,52 @@ Create a form to put values for  fields (Mortgage <text>, gas<text>,childcare <t
 Upon Save, go to Details.html page, show all the inputs in tabular form. (We need to know Java script to fetch the values from first form)
 Options: customize the form to try out as many elements as possible. E.g, some expense is for monthly, sopme are for annually. try using radio buttons and check boxes to choose options.
 try using column span, row span
+
+Day 4:
+<iframes>
+<meta> tag is information for browser, it is used for SEA, search engine optimization
+it has attributes like:
+name and content which used to provide some keywords to search engine to identify our web page
+<meta charset ="utf-8">
+<meta name="author" content="Harry Potter">
+
+<emojis>
+Emoji's are characters in utf-8, they look like code numbers, when included in HTML, it displays emoji's at run time. the code is in decimal<prefix &#> or hex decimal<prefix &#x>
+
+Fevicon<link rel="icon" type="image/x-icon" href="path of .ico file">
+This is displayed next to title
+
+type can be icon, or png e.t.c but icon is the standard.
+
+*BROWSER specific*
+Favicon of size 16X16 will not be displayed on Chrome.
+So always choose icon of size 48X48 or above
+
+Entities:
+--------
+when special character is needed use entities 
+e.g: '&dollar' to display $  sign
+since '<' is reserved for HTML tags, using it in text might not display in different browsers, so use &lt instead.
+https://www.w3schools.com/html/html_entities.asp
+
+<Form action="Which page to go" method="post">
+by default when a form is submitted the method is GET, this displays all the data in form elements. To avoid exposing the data choose methods. POST will not show the data.
+
+Emojis
+-------
+
+
+HTML Vs HTML 5
+***broke the dependency on FLASH, we can use canvas tag instead hence faster
+Supported by all browsers
+New tags like header, footer, nav
+Responsive screen using meta tab
+
+What is semantic element?
+
+Tags VS elemenbts
+
+Entities in HTML
+
+id Vs class
 

@@ -1,0 +1,12 @@
+
+p {
+    color: #ff5090; 
+    background-color: antiquewhite;
+    text-decoration:line-through;
+
+}
+caption {
+    background-color: #00f099;
+    text-align: center;
+}     
+#Mode {accent-color: blueviolet;}

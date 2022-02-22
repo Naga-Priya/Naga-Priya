@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="./BudgetPlannerStyle.css">
     <title>Document</title>
 </head>
 <body>
     <form action="./datapage.html">
 <table border="0" >
     <tr>
-        <Th colspan="3"> Monthly Budget Planner</Th>
+        <!--background-color doesn't work here-->
+        <Th colspan="3" bgcolor="lightblue" > Monthly budget planner</Th>
     </tr>
     <tr>
         <td><label for="month">Month: </label></td>
@@ -154,6 +156,22 @@
             </tr>
             <tr>
                 <td><input type="submit" value="Submit"></td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./BudgetPlannerStyle.css">Click here</a> to view the styling sheet.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="p1" name="para1">This is the first paragraph without styling</p>
+                    <p id="p2" name="para2">This is an even number paragraph style it with background and font color</p>
+                    <p id="p3" name="para3">This is the Third and odd number paragraph without styling</p>
+                    <p id="p2" name="para4">This is 4th paragraph style it with background and font color</p>
+                    <p id="p5" name="para5">This is the 5th paragraph without styling</p>
+                    <p id="p6" name="para6" class="par6">This 6th paragraph style is styled with reference to class attribute</p>
+
+                </td>
             </tr>
         </table>
         </fieldset>

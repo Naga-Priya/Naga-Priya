@@ -88,3 +88,60 @@ Entities in HTML
 
 id Vs class
 
+Feb21, Monday
+-------------
+
+CSS- Cascading style sheet
+Saves time and formats uniformly throughout the site
+reduces tag attributes, hence pages load faster
+Easy to maintain, changes can be made globally quicker
+Multiple device compatability- mobile, web
+Cons: overriding style locally needs more work? how is it done?
+
+CSS syntax:
+We write style rules that are applied to targeted elements in our HTML document
+3 parts of style rule:
+selector- any HTML tag that identifies the elements to which a style is applied, e.g: <p><Table>
+Property: the attribute that is customized by style rule. e.g: color, border
+Value: new value to the property e.g: blue, 1
+
+e.g: h1 {
+    color:blue;
+    font-size:18px;}
+
+types:
+inline CSS- adding style attribues inside HTML document.
+e.g: <h1 style="Color:red;">This is a new header</hl>
+Pro: overrides global CSS and has high precedence.
+cons: cannot be applied globally, we have to add style attribute for each tag.
+
+Embedded or Internal CSS:
+style rules are placed inside the head section, so all the elements in this HTML document will be affected by this style rules.
+
+External CSS:
+we write a css file and link it to our HTML document using <link rel="stylesheet" href="<css file path/name>">
+***To impose a style in external CSS over inline CSS, use '
+!important' attribute in the style rule in external CSS. this instructs browser to ignore inline CSS.***
+
+Working with Text in CSS:
+Properties
+1. color a color name like red/ a hex value like #ff0000/an RGB value like rgb(255,0,0)
+2. Background-color -changes the background color of text element
+3. Text-align: center/left/right/justify
+4. Text-direction: changes direction of text (left to right to arabic format, right to left)
+5. Text-decoration: none/overline/line-through/under-line
+6. Text-transform: uppercase/lowercase/capitalize;
+7. text-indent: add/remove space before the test
+                text-indent: 40px; //leaves 40 pixels before the element
+8. letter-spacing: adds space between characters in words
+9. line-height
+10. word-spacing:
+11. text-shadow: 2px 2px (adds horiaontal and verical shadow)
+                 
+Developer options:
+------------------
+shortcut f12, in chrome
+right click on any element in the browser-> select inspect, choose elements (if another tab is selected on top right frame), inspect the styles applied in the bottom right frame. 
+We can use this to check and try out style on the go but the changes wont reflect on the HTML document. 
+
+Console window is used for Java Script

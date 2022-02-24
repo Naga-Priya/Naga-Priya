@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a.tabStyle:focus {
+        color: aquamarine;
+        background-color:red;
+    }
+    a.tabStyle:hover {
+        background-color: rgba(26, 209, 255, 0.5);
+    }
+    iframe {
+        border:1px solid red;
+        /*This is not working*/
+        background-color: rgba(100,10%, 30%, 0.5);
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <a href="./InsetPg1.html" target="frame1" class="tabStyle">Tab1</a>&emsp;
+    <a href="./InsetPg2.html" target="frame1" class="tabStyle">Tab2</a>&emsp;
+    <a href="./Insetpg3.html" target="frame1" class="tabStyle">Tab3</a>&emsp;
+    <iframe name="frame1" width="100%"></iframe>
+    
+</body>
+</html>

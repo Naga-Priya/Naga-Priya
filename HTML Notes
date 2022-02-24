@@ -145,3 +145,35 @@ right click on any element in the browser-> select inspect, choose elements (if 
 We can use this to check and try out style on the go but the changes wont reflect on the HTML document. 
 
 Console window is used for Java Script
+
+Feb 22: CSS
+------------
+CSS Selectors
+* - everything
+#<id>
+.<class>
+tag1,tag2
+div>p -selects onlt the p tags inside div tag
+div+p - select first p element after div tag
+p ~ ul - all ul element before P element
+
+** An element can have multiple classes, styling can be applied from multiple rules using multiple classes**
+
+Div - divides the contents into multiple blocks or divisions. It includes a new line between div sections.
+Span - smaller divisions, if we want to divide with a line 
+
+*text align, margin can be used for center aligning. One of them might work*
+
+Pseudo classes - Styling based on state of a element:
+:active
+::after
+::
+
+':nth-child(n)' -Style based on order of elements
+
+Text Styling:
+font-weight
+font-variant
+font-size - Abolute (used for smaller screens)/relative
+**Use link href to import google fonts**
+

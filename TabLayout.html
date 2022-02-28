@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="./FlexNGrid.css">-->
+    <style>
+    
+    .tabContainer {
+        position:relative;
+        left: 0px;
+        width:100%;
+        background-color: red;
+        
+    }
+
+    .tabContainer > div {
+        display:inline;
+        margin-block-start: 15px;
+        margin-left: 4px;
+        
+        /* padding: 20px; */
+        /* height:50px;
+        width:30%; */
+        background-color:aliceblue;
+        float:left;
+        order:1;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border:2px Solid black;
+        padding: 2px;
+        
+        
+
+    }
+
+    .tabContainer div a{
+        order:1;
+        /* margin: auto; */
+        font-size: 2rem;
+        text-decoration: none;
+        /* display: block; */
+    }
+    /* .tab2 a{
+        order:1;
+        text-decoration: none;
+        margin: auto;
+        font-size: 2rem;
+    }
+    .tab3 a{
+        order:1;
+        text-decoration: none;
+        margin: auto;
+        font-size: 2rem;
+    } */
+    
+    
+    .tabContainer div:target {
+        background-color: aqua;
+        /* margin-left: 0px; */
+    }
+    .tabContainer div:target div {
+        display:block;
+        width:100%;
+        height:500px;
+        position:absolute;
+        margin-top:5px;
+        margin-left:0px;
+        /* float:left; */
+        z-index: 1;
+        left: 0;
+    }
+
+
+
+    
+
+    .tabContainer> div> div {
+        display:none;
+        position:absolute;
+        margin-top:5px;
+        margin-left:0px;
+        float:left;
+        width: 100%;
+        background-color: rgba(255, 0, 0, 0.425);
+        border: 2px solid black;
+        z-index: -1;
+        
+    }
+    .tabContainer> div> div +Iframe {
+        display: none;
+        position:absolute;
+        left: 0px;
+        width: 100%;
+        /* margin-left: 0px; */
+        z-index:-1;
+        
+        
+    }
+    .tabContainer div:not(:target) div {
+        display:none;
+        width:auto;
+        position:absolute;
+        z-index: -1;
+    }
+
+    .tabContainer> div:not(:target) div +Iframe{
+        display:none;
+        width:auto;
+        position:absolute;
+        z-index: -2;
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="tabContainer">
+        <div class="tab1" id="box1">
+            <a href="#box1">Box 1 </a> 
+            <div> 
+                Content of Box 1, This will be displayed only when box 1 tab is selected.
+                <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi sit eum fugiat, sint vel veritatis vitae cumque consequuntur temporibus dolor, minus praesentium, cupiditate sunt! Iusto corrupti consequuntur culpa quos voluptatum quasi, nihil provident repellat unde laborum dolorum tempora inventore, atque ipsa cum, explicabo beatae. Perspiciatis rerum odio id temporibus recusandae.
+                <!-- <Iframe src="./InsetPg1.html"></iframe>  -->
+            </div>
+        </div>
+        <div class="tab2" id="box2">
+            <a href="#box2">Box 2</a>
+            <div> 
+                Content of Box 2, This will be displayed only when box 2 tab is selected.
+                <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi sit eum fugiat, sint vel veritatis vitae cumque consequuntur temporibus dolor, minus praesentium, cupiditate sunt! Iusto corrupti consequuntur culpa quos voluptatum quasi, nihil provident repellat unde laborum dolorum tempora inventore, atque ipsa cum, explicabo beatae. Perspiciatis rerum odio id temporibus recusandae.
+                <br>
+                <iframe src="./InsetPg2.html"></iframe>
+            </div>
+        </div>
+        <div class="tab3" id="box3">
+            <a href="#box3">Box 3</a>
+            <div> 
+                <!-- Content of Box 3, This will be displayed only when box 3 tab is selected. -->
+                <Iframe src="./InsetPg3.html"> </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="tabsContainer">
+    <div class="fruittabs">
+        <input type="radio" id="apple" name="fruits">
+        <label for="apple">Apple</label>
+    </div>
+    <div class="fruittabs">
+        <input type="radio" id="Orange" name="fruits">
+        <label for="Orange">Orange</label>
+    </div>
+</div>
+
+<div> <p id="p1">
+    <a href="#p1" class="selfLink">Self Link</a>
+    </p>
+</div>
+-->
+</body>
+</html>

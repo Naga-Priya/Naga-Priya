@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">
+    <style>
+        .container {
+            
+            display:grid;
+            /* grid-template-columns: 1.5fr 0.75fr 1.5fr; */
+            grid-template-columns: 1.75fr 1fr 1fr;
+            /* grid-template-rows:  */
+            grid-auto-rows: minmax(3em,auto);
+            row-gap: 0.5em;
+            column-gap: 1em;
+            width: 450px;
+            /* height: 300px; */
+            margin: auto;
+            column-width: auto;
+            border: 2px solid blue;
+            margin-top: 15%;
+            /* justify-items:center; */
+            box-shadow: 2px 2px rgb(255, 0, 0), -1em -1em .5em olive;
+            
+        }
+        .heading {
+            grid-column: 1/4;
+            justify-items: center;
+            text-align: center;
+            
+            border-bottom: 2px solid blue;
+            text-shadow: 1px 1px blue, -.5em -.5em 1em violet;
+        
+        }
+        label {
+            grid-column: 1/2;
+            /* grid-row: 2/3; */
+            text-transform: capitalize;
+            margin-left: 5px;
+            font-size:21px;
+        }
+        input {
+            grid-column: 3/4;
+            padding: 5px;
+            height: 15px;
+            margin-right: 5px;
+            border: 2px solid blueviolet;
+            /* grid-row: 2/3; */
+            color:blue;
+        }
+        button{
+            grid-column: 2/3;
+            border-radius: 3px 3px 3px 3px;
+            border-color: blue;
+            box-shadow: 1.5px 1.5px blueviolet;
+            
+        }
+        .row4 {
+            grid-column: 1/4;
+            margin-left: 5px;
+            font-size:20px;
+            
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body class="w3-theme-l1 w3-text-theme">
+    <div class="container w3-theme-l3">
+    <h1 class="heading  w3-text-theme">Guessing Game</h1>
+    
+    <label for="guess " >Enter your guess: </label>
+    <input type="number" id="guess"><br>
+    
+    <button class="w3-hover-theme w3-hover-border-theme" onclick="validateGuess()">Guess!</button>
+    <p id="message" class="row4"><br></p>
+</div>
+
+</body>
+</html>
+<script>
+    let myLuckyNo= Math.floor(Math.random() * 10);
+    let noOfGuesses=0;
+    // alert(myLuckyNo);
+    let message = ["Hmm!.. no","Sorry, Try again","Keep guessing.."];
+    let color = ["#000000", "#FF6347", "#FF00FF", "#8B008B","#7B68EE","#239023","#00FF7F","#00FFFF","#4682B4","#1E90FF"];
+function validateGuess(){
+    noOfGuesses++;
+    var txt=document.getElementById("guess").value;
+    if(txt==myLuckyNo){ 
+        
+        let res="Great You took "+noOfGuesses+" attempts to guess it right</p>";
+        //document.getElementById("message").style.color=color[txt];
+        document.getElementById("message").innerHTML = res;
+        setTimeout(() => {if(confirm("Play again?"))window.location.reload();}, 500);
+        // if(confirm("Replay?")){
+        //     window.location.reload();
+        // }
+        // alert(res);
+    }
+    else{ 
+        
+        let res="Not really! Give it another try.";
+        if(noOfGuesses!=1){ 
+            res+=" <p style=\"color:"+color[txt]+"\">";
+            res+=message[(noOfGuesses-1)%message.length];
+            //document.getElementById("message").style.color=color[txt];
+            
+        }
+        document.getElementById("message").innerHTML = res;
+        document.getElementById("guess").value='';
+        // alert(res);
+    }
+}
+</script>

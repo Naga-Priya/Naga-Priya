@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Timesheet Submitted!</h3>
+    <p id="timesheet" style="word-spacing: 1px; line-height: 2vw;"></p>
+</body>
+</html>
+<script>
+    document.getElementById("timesheet").innerHTML =
+    "Name: "+sessionStorage.getItem("Name")+ "<br> <br>" +
+    "EmployeeID: "+sessionStorage.getItem("EmployeeID")+ "<br> <br>"+
+    "JoiningDate: "+sessionStorage.getItem("JoiningDate")+ "<br> <br>"+
+    "NoOfHours: "+sessionStorage.getItem("NoOfHours")+ "<br> <br>"+
+    "Designation: "+sessionStorage.getItem("Designation")+ "<br> <br>"+
+    "Salary: $"+sessionStorage.getItem("Salary");
+</script>

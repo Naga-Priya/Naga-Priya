@@ -1,0 +1,84 @@
+
+/* body {
+  background-color: var(--theme-color);
+} */
+.bar[data-choice="1"] {
+    background-color: red;
+}
+
+.bar[data-choice="2"] {
+    background-color: lightgreen;
+}
+
+.bar[data-choice="3"] {
+    background-color: lightskyblue;
+}
+
+.bar[data-choice="4"] {
+    background-color: blue;
+} 
+
+.bar[data-choice="5"] {
+    background-color: orange;
+}
+
+div.choices{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.choice {
+    display:flex;
+    flex-direction: row-reverse;
+
+    gap: 3px;
+}
+.result{
+    /* float: right; */
+    height: 50px;
+    width:70%;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+.bar {
+    height: 50px;
+    width:70%;
+}
+.label {
+    height:50px;
+    width:30% ;
+    border:none;
+}
+.label >button{
+    /* float:left; */
+    box-sizing: border-box;
+    height:50px;
+    width:100%;
+    border-radius: 12px;
+    border:none;
+    background-color: rgba(179, 149, 240, 0.666);
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+  
+  color: blue;
+}
+
+.question {
+    font-size: larger;
+}
+
+
+
+.label >button:hover{
+    border: 2px solid transparent;
+    color: indigo;
+    transform: scale(1.05);
+    will-change: transform;
+    box-shadow: 2px 2px pink 1px 1px red;
+}
+.label > button:hover::after { 
+    border: 2px solid auto;
+    background-color: pink;;
+    box-shadow: 2px 2px pink 1px 1px red;
+}
+

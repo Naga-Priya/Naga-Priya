@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/themes.css">
+    <link rel="stylesheet" href="Voting.css">
+
+    <title>Voting</title>
+</head>
+<body>
+  <h2>Share your opinion: </h2>
+    <p class="question">Which of the following plays a significant role in closing gender gap in STEM field:</p>
+    <div class="choices">
+        <div class="choice" >
+          <div class="result">
+            <div class="bar" data-choice="1"></div>
+          </div>
+          <div class="label">
+            <button  class="" data-choice="1">Dismantling Gender Stereotypes</button>
+          </div>
+        </div>
+        <div class="choice">
+          <div class="result">
+            <div class="bar" data-choice="2"></div>
+          </div>
+          <div class="label">
+            
+            <button data-choice="2">Female Role Models</button>
+          </div>
+        </div>
+        <div class="choice">
+          <div class="result">
+            <div class="bar" data-choice="3"></div>
+          </div>
+          <div class="label">
+            
+            <button data-choice="3">STEAM-Based Classroom Projects</button>
+          </div>
+        </div>
+        <div class="choice">
+            <div class="result">
+              <div class="bar" data-choice="4"></div>
+            </div>
+            <div class="label">
+              
+              <button data-choice="4">STEM Equity Legislation</button>
+            </div>
+          </div>
+          <div class="choice">
+            <div class="result">
+              <div class="bar" data-choice="5"></div>
+            </div>
+            <div class="label">
+              
+              <button data-choice="5">Private Grants & Fellowships</button>
+            </div>
+          </div>
+      </div>
+
+
+</body>
+</html>
+<script>
+    var buttons = document.querySelectorAll(".choice button"),
+  tally = {
+    1: 30,
+    2: 20,
+    3: 30,
+    4: 10,
+    5: 10,
+    total: 100
+  };
+
+function vote(choice) {
+  tally[choice]++;
+  tally["total"]++;
+  console.log(tally);
+}
+
+function barPercentage(node, tally) {
+  var choice = node.dataset.choice;
+  
+  if (tally[choice])
+    return tally[choice]/tally["total"] * 100;
+  return 0;
+}
+
+function renderBars() {
+  var bars = document.getElementsByClassName("bar");
+  
+  for (var i = 0; i < bars.length; i++) {
+    var percentage = barPercentage(bars[i], tally);
+    console.log(percentage)
+    bars[i].style.width = percentage.toString() + "%";
+  }
+}
+
+function setup() {
+  // Set up event listeners
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function(e) {
+      vote(e.target.dataset["choice"]);
+      renderBars();
+    });
+  }
+  
+  renderBars();
+}
+
+setup();
+</script>

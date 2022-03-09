@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+	<TITLE> Sales Order Processing </TITLE>
+	<!-- <SCRIPT language="javascript" type="50b290be83f7591a290ae364-text/javascript">
+		function addRow(tableID) {
+
+			var table = document.getElementById(tableID);
+
+			var rowCount = table.rows.length;
+			var row = table.insertRow(rowCount);
+
+			var cell1 = row.insertCell(0);
+			var element1 = document.createElement("input");
+			element1.type = "checkbox";
+			element1.type = "chkbox[]";
+			cell1.appendChild(element1);
+
+			var cell2 = row.insertCell(1);
+			cell2.innerHTML = rowCount + 1;
+
+			var cell3 = row.insertCell(2);
+			var element2 = document.createElement("input");
+			element2.type = "text";
+			element2.name = "txtbox[]"
+			cell3.appendChild(element2);
+
+
+		}
+
+		function deleteRow(tableID) {
+			try {
+			var table = document.getElementById(tableID);
+			var rowCount = table.rows.length;
+
+			for(var i=0; i<rowCount; i++) {
+				var row = table.rows[i];
+				var chkbox = row.cells[0].childNodes[0];
+				if(null != chkbox && true == chkbox.checked) {
+					table.deleteRow(i);
+					rowCount--;
+					i--;
+				}
+
+
+			}
+			}catch(e) {
+				alert(e);
+			}
+		}
+
+	</SCRIPT> -->
+    <SCRIPT src="/Users/rajarambalakrishnan/Priya/Code/Destruct.js"></SCRIPT>
+    <style>
+        .DisplayArea {
+            margin-top: 10VW;
+            margin-left: 25%;
+        }
+        .calculate{
+            background-color: cadetblue; 
+            border-radius: 5px; 
+            height:4vw; 
+            width:10vw;
+            margin-left:20%;
+            margin-top: 5vw;
+        }
+        .headingalign {
+            color:brown;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+            animation-timing-function: ease-out;
+            animation: forwards;
+        }
+        :root {
+            --animate-duration: 2s;
+            --animate-delay: 4s;
+            --animate-repeat: 4;
+        }
+        
+        .animated {
+            animation-duration: var(--animate-duration);
+            animation-fill-mode: both;
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translate3d(-100%, 0, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        
+        .fadeInLeft {
+            animation-name: fadeInLeft;
+        }
+
+        .oparea {
+            border: 2px solid red;
+            width:65%;
+            height:20%;
+        }
+            
+    </style>
+</HEAD>
+<BODY style="margin:auto">
+    <div class="DisplayArea">
+        <h3 class="headingalign animated fadeInLeft "> Sales Order Processing</h3>
+    <textarea id="inputArea" rows="8" cols="90" readonly>
+        <pre>
+            const sales = [ 
+        { item: 'PS4 Pro', stock: 3, original: 399.99 }, 
+        { item: 'Xbox One X', stock: 1, original: 499.99, discount: 0.1 }, 
+        { item: 'Nintendo Switch', stock: 4, original: 299.99 }, 
+        { item: 'PS2 Console', stock: 1, original: 299.99, discount: 0.8 }, 
+        { item: 'Nintendo 64', stock: 2, original: 199.99, discount: 0.65 } 
+        ];
+        </pre>
+        </textarea>
+        <input type="button" class="calculate animated fadeInLeft" onclick="ShowOutput()" value="Calculate" >
+
+        <p id="outputArea" class="oparea animated fadeInLeft" ></p>
+    </div>
+
+	<!-- <INPUT type="button" value="Add Row" onclick="if (!window.__cfRLUnblockHandlers) return false; addRow('dataTable')" data-cf-modified-50b290be83f7591a290ae364-="" />
+
+	<INPUT type="button" value="Delete Row" onclick="if (!window.__cfRLUnblockHandlers) return false; deleteRow('dataTable')" data-cf-modified-50b290be83f7591a290ae364-="" />
+
+	<TABLE id="dataTable" width="350px" border="1">
+<TR>
+<TH>Select</TH>
+<TH>Sr. No.</TH>
+<TH>Value</TH>
+</TR>
+		<TR>
+			<TD><INPUT type="checkbox" name="chkbox"/></TD>
+			<TD> 1 </TD>
+			<TD> <INPUT type="text" name="txtbox"/> </TD>
+		</TR>
+	</TABLE> -->
+
+<!-- <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="50b290be83f7591a290ae364-|49" defer=""></script></BODY> -->
+</HTML>

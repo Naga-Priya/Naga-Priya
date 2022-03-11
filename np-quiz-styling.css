@@ -1,0 +1,63 @@
+:root, body {
+    --np-color-white: rgba(250, 242, 242, 0.568);
+    --np-color-black: #000;
+    --np-background-dark: #413a63;
+    --np-background-light: #fff;
+    --type-heading-h1:var(--np-color-black) oblique 21deg 500 ;
+
+}
+.logoarea{
+    display: block;
+    border: 2px double darkred;
+
+}
+
+.pgcontainer {
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    gap: 1vw;
+    
+}
+.contents-table {
+    display: flex;
+    flex-flow: column wrap;
+    background-color:rgba(158, 188, 245, 0.678);
+    padding: 1vw;
+    height:100%;
+    gap: 1vw;
+}
+quiz-area {
+    grid-column: 2/3;
+}
+.np-heading{
+    /* font: var(--type-heading-h1); */
+    letter-spacing: .5px;
+    margin-bottom: 3rem;
+    word-break: break-word;
+    
+}
+.quizcontainer {
+    display: flex;
+    flex-flow: column wrap;
+    height:auto;
+    width: 100%;
+    background-color: azure;
+    gap: 1vw;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+    word-break: break-word;
+    /* Grid takes care of this
+    margin-left: 20%;
+    margin-right: 20%; */
+}
+.question{
+    height:auto;
+    width:100%;
+    background-color: aliceblue;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+    word-break: break-word;
+}
+.options {
+
+}

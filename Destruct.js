@@ -22,10 +22,13 @@ const sales = [
 function calculate(arr){
     let output =[];
     for(orderitem of arr){
-        (function({item,stock,original,discount=0,total=0})
+        (function({item,stock,original,discount=0,Sale=0,total=0})
         {
-            total = stock * (original-(original*discount));
-            output.push({item,stock,original,discount,total});
+            Sale=original-(original*discount);
+            Sale = Sale.toFixed(3);
+            total = stock * (Sale);
+            total = total.toFixed(3);
+            output.push({item,stock,original,discount,Sale,total});
         }(orderitem));
         //output.push(item);
     }

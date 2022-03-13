@@ -57,7 +57,44 @@ quiz-area {
     letter-spacing: .5px;
     margin-bottom: 1rem;
     word-break: break-word;
+    font-size: 20px;
 }
 .options {
 
+}
+.optionbutton{
+    background: transparent;
+    border:2px 2px blue;
+    box-shadow: 0px 1px 4px -2px #333;
+    
+    border-radius: 5px;
+    height: 100%;
+    width:100%;
+    text-align: left;
+    font-size: 18px;
+
+}
+.navbutton {
+    height:30px;
+    width:70px;
+    background-color:darkgreen;
+    background-image: linear-gradient(darkgreen,darkseagreen);
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px -2px #333;
+    text-shadow: 0px -1px #333;
+
+}
+
+.navbutton:after{
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+.navbutton:hover{
+	background: linear-gradient(#073,#0fa);
+}
+
+.navbutton:disabled,
+.navbutton[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }

@@ -52,8 +52,16 @@ function validate(event){
     if(event.target.dataset["choice"] == questions[Number(sessionStorage.getItem("idx"))].answer){
         //change color of option
         // event.target.
+        var txt = event.target.innerHTML;
+        txt+="&nbsp;<i class=\"fa-solid fa-check\" style=\"color:green\"></i>";
+        event.target.innerHTML =txt;
         let score = Number(sessionStorage.getItem("Score")) +1;
         sessionStorage.setItem("Score",score.toString());
+    }
+    else{
+        var txt = event.target.innerHTML;
+        txt+="&nbsp;<i class=\"fa-solid fa-xmark\" style=\"color:red\"></i>";
+        event.target.innerHTML =txt;
     }
 
 }

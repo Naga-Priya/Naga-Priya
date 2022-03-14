@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./np-quiz-styling.css">
+    <script src="https://kit.fontawesome.com/17c499033e.js" crossorigin="anonymous"></script>
     <script   src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <script src="./FinalQuiz.js"></script>
     <title>Final Quiz</title>
@@ -17,10 +18,13 @@
         <div class="contents-table">Table of contents link appears here:</div>
         <div class="quiz-area">
             <header><H2 class="np-heading">Topic:</H2></header>
+            
             <div class="quizcontainer">
                 <div class="question" >Question:<p id="question"></p></div>
                 <div class="options"></div>
-                <div class="option"><button class="optionbutton" id="option1" data-choice="1" onclick="validate(event)"></button></div>
+                <div class="option"><button class="optionbutton" id="option1" data-choice="1" onclick="validate(event)">
+                    <i class="fa-solid fa-check"></i>
+                </button></div>
                 <div class="option"><button class="optionbutton" id="option2" data-choice="2" onclick="validate(event)"></button></div>
                 <div class="option"><button class="optionbutton" id="option3" data-choice="3" onclick="validate(event)"></button></div>
                 <div class="option"><button class="optionbutton" id="option4" data-choice="4" onclick="validate(event)"></button></div>
@@ -31,6 +35,7 @@
     
             </div>
         </div>
+        <div class="bottom-panel"><h4>Related links will appear here</h4></div>
         
     </div>
 

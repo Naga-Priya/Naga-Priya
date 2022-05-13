@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Naga-Priya
 - 👀 I’m interested in returnship opportunity
-- 🌱 I’m currently learning low code application development using PEGA
-- 💞️ I’m looking to collaborate on topics like PEGA, C/C++, Java, Selenium & Software testing
+- 🌱 I’m currently learning Full stack development, low code application development using PEGA
+- 💞️ I’m looking to collaborate on topics like HTML, CSS, JS, React, Redux, Java, PEGA, C/C++,  Selenium & Software testing
 - 📫 To reach me please mail to nagapriya.cks@gmail.com
 
 <!---
